@@ -1,0 +1,34 @@
+@media screen and (max-width: 1430px){
+    .banner{
+        height: auto;
+    }
+
+    .bannerRight > .bottom > .left,
+    .bannerRight > .bottom > .right{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 2rem;
+    }
+
+    .content > .info > .socialLinks{
+        margin: 0 1rem;
+    }
+    
+    .content > .info > .whyTitle{
+        color: var(--darkblue);
+        font-size: 2rem;
+        margin: 0 1.5rem;
+    }
+    
+    .content > .info > .whyText{
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 1278px){
+    .triangleDesignContainer{
+        display: none;
+    }
+
+}

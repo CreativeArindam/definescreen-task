@@ -1,0 +1,8 @@
+@media screen and (max-width: 340px){
+    .triangleDesignContainer{
+        display: none;
+    }
+    .circleDesign{
+        display: none;
+    }
+}

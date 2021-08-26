@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{
+    --darkblue : rgb(53,46,81);
+    --pink: rgb(255,91,116);
+    --skyblue: rgb(151,199,205);
+}
+
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    display: flex;
+    height: 60vh;
+}
+
+/* Banner Left ================================================= */
+.bannerLeft{
+    flex: 1;
+    background-color: #f4f4f4;
+    background-image: url(../assets/bannerImg.png);
+    background-size: cover;
+}
+
+/* Banner Right ================================================= */
+.bannerRight{
+    flex: 1;
+}
+.bannerRight > .top{
+    background-color: var(--darkblue); /* #352e51*/
+    height: 40%;
+    /*To enter the logo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerRight .top > img{
+    height: 5rem;
+}
+
+.bannerRight > .bottom{
+    height: 60%;
+    display: flex;
+}
+
+.bannerRight > .bottom > .left,
+.bannerRight > .bottom > .right{
+    padding: 2rem;
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: center;
+    /*To center the text*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerRight > .bottom > .left{
+    flex: 3;
+    background-color: var(--skyblue);
+}
+
+.bannerRight > .bottom > .right{
+    flex: 4;
+    background-color: rgb(206,141,151);
+}
+
+/* Content =============================================*/
+.content{
+    padding: 0 5rem;
+    padding-top: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+.contentTitle{
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--darkblue);
+    margin-bottom: 2rem
+}
+
+.highitedText{
+    color: var(--pink) !important;
+}
+
+.content > .info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem 0;
+}
+
+.content > .info > .socialLinks a{
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.content > .info > .socialLinks{
+    margin: 0 3rem;
+}
+
+.content > .info > .socialLinks a  img{
+    height: 1.8rem;
+}
+
+.content > .info > .whyTitle{
+    color: var(--darkblue);
+    font-size: 2.2rem;
+    margin: 0 3rem;
+}
+
+.content > .info > .whyText{
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+/*3 triangle design ==========*/
+.triangleDesignContainer{
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    height: 120px;
+}
+
+.triangleDesign{
+    position: relative;
+}
+
+.triangleDesign > #triangle1{
+    width: 150px;
+	height: 120px;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    background: var(--pink);
+    position: absolute;
+}
+
+.triangleDesign > #triangle2{
+    width: 150px;
+	height: 120px;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    transform: rotate(180deg) translateY(0.2rem);
+    background: var(--pink);
+    position: absolute;
+    left: 5.5rem;
+}
+
+.triangleDesign > #triangle3{
+    width: 150px;
+	height: 120px;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    background: var(--pink);
+    position: absolute;
+    left: 11rem;
+}
+
+/*Circle design ==============*/
+.circleDesign{
+    background: var(--skyblue);
+    width: 15rem;
+    height: 15rem;
+    clip-path: circle();
+    /*to position the circle*/
+    position: absolute;
+    right: -8rem;
+    bottom: -8rem;
+}

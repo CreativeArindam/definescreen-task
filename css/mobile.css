@@ -1,0 +1,105 @@
+@media screen and (max-width: 768px){
+    .banner{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .bannerLeft{
+        min-height: 35vh;
+        max-height: 35vh;
+    }
+
+    .bannerRight > .top{
+        padding: 2rem;
+    }
+    .bannerRight > .top img{
+        height: 4rem;
+    }
+
+    .bannerRight > .bottom{
+        flex-direction: column;
+    }
+
+    /*Content ======================================*/
+    .content{
+        padding: 0 1rem;
+        /* padding-bottom: 5rem; */
+    }
+
+    .contentTitle{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 2rem 0;
+    }
+
+    .content > .info{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .content > .info > .whyTitle{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .content > .info > .whyText{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .content > .info > .socialLinks{
+        order: 3;
+        margin: 2rem 0;
+    }
+
+    .triangleDesignContainer{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: -4rem;
+        height: 60px;
+        z-index: -1;
+    }
+    
+    .triangleDesign{
+        position: relative;
+    }
+    
+    .triangleDesign > #triangle1{
+        width: 75px;
+        height: 60px;
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        background: var(--pink);
+        position: absolute;
+    }
+    
+    .triangleDesign > #triangle2{
+        width: 75px;
+        height: 60px;
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        transform: rotate(180deg) translateY(0.2rem);
+        background: var(--pink);
+        position: absolute;
+        left: 3rem;
+    }
+    
+    .triangleDesign > #triangle3{
+        width: 75px;
+        height: 60px;
+        clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        background: var(--pink);
+        position: absolute;
+        left: 6rem;
+    }
+
+    .circleDesign{
+        background: var(--skyblue);
+        width: 7rem;
+        height: 7rem;
+        clip-path: circle();
+    
+        position: absolute;
+        right: -3rem;
+        bottom: -3rem;
+    }
+}
